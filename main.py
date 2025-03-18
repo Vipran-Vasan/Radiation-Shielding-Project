@@ -33,7 +33,7 @@ def run_simulation(material):
     particle_states = np.zeros(num_particles, dtype=int)  # 0 = active, 1 = absorbed, 2 = transmitted
 
     #An arbitrary speed value provided to help visualise the particles motion
-    speeds = 70
+    speed = 70
     particles[:, 2] = np.full(num_particles, speed)
 
     angles = np.random.uniform(np.pi / 3, 2 * np.pi / 3, size=num_particles)
